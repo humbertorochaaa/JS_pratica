@@ -8,12 +8,23 @@ class ContaCorrente{
     saldo;
 
     sacar(Valor){
-        if(this.saldo >= Valor){
-            this.saldo -= Valor;
+        if (this.saldo >= Valor) {
+            this.saldo += Valor;
+            
         }
-        
-
     }
+  
+    depositar(Valor){
+        if (Valor >0) {
+            this.saldo += Valor;
+            
+        }
+    }
+       
+           
+       
+
+    
 }
 
 
@@ -28,11 +39,12 @@ const ContaCorrenteHumberto = new ContaCorrente();
 ContaCorrenteHumberto.saldo = 0;
 ContaCorrenteHumberto.agen = 001;
 console.log(ContaCorrenteHumberto.saldo);
-
-ContaCorrenteHumberto.saldo = 100;
+ContaCorrenteHumberto.depositar(100);
+ContaCorrenteHumberto.depositar(100);
+ContaCorrenteHumberto.depositar(-10);
 console.log(ContaCorrenteHumberto.saldo);
 
-ContaCorrenteHumberto.sacar(50);
+ContaCorrenteHumberto.sacar(350);
 
 
 console.log(ContaCorrenteHumberto.saldo);

@@ -1,0 +1,20 @@
+{
+  "name": "js_pratica",
+  "version": "1.0.0",
+  "description": "Praticas ",
+  "main": "Cliente.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/humbertorochaaa/JS_pratica.git"
+  },
+  "author": "Humberto Rocha",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/humbertorochaaa/JS_pratica/issues"
+  },
+  "homepage": "https://github.com/humbertorochaaa/JS_pratica#readme"
+}

@@ -1,4 +1,4 @@
-class ContaCorrente{
+export class ContaCorrente{
     agen;
     saldo;
 

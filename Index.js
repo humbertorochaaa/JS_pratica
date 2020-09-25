@@ -1,10 +1,5 @@
-
-
 import {Cliente} from "./Cliente.js"
 import {ContaCorrente} from "./ContaCorrente.js"
-
-
-
 
 
 const cliente01 = new Cliente();
@@ -12,44 +7,47 @@ const cliente02 = new Cliente();
 const cliente03 = new Cliente();
 const cliente04 = new Cliente();
 
-const ContaCorrenteHumberto = new ContaCorrente();
-ContaCorrenteHumberto.saldo = 0;
-ContaCorrenteHumberto.agen = 001;
-console.log(ContaCorrenteHumberto.saldo);
-ContaCorrenteHumberto.depositar(100);
-ContaCorrenteHumberto.depositar(100);
-ContaCorrenteHumberto.depositar(-10);
-console.log(ContaCorrenteHumberto.saldo);
 
-ContaCorrenteHumberto.sacar(350);
+const conta01 = new ContaCorrente();
+conta01.cliente = cliente01;
+conta01.agencia = 1501;
+cliente01.nome = "Humberto";
+cliente01.cpf = 12345678;
 
-
-console.log(ContaCorrenteHumberto.saldo);
+conta01.depositar(100);
 
 
 
- cliente01.nome = "Humberto";
- cliente01.cpf = 1234567890;
+
+
+const conta02 = new ContaCorrente();
+conta02.cliente = cliente02;
+conta02.agencia = 1701;
+cliente02.nome = "Iasmim";
+cliente02.cpf = 123589798;
+
+
+
+
+conta01.transferir(100, conta02);
+
+
+
+
+
+console.log(conta01);
+console.log(conta02);
+
+
+
 
 
 
  
 
- cliente02.nome = "Iasmim";
- cliente02.cpf = 987654321;
-
-
-
- cliente03.nome = "Geraldo";
- cliente03.cpf = 987654320;
-
-
- cliente04.nome = "Manoel";
- cliente04.cpf = 987657321;
 
 
 
 
 
-console.log(cliente01,);
-console.log();
+

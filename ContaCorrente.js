@@ -9,9 +9,10 @@
 
     sacar(Valor){
         if (this.saldo >= Valor) {
-            this.saldo += Valor;
-            
+            this.saldo -= Valor;            
+            return Valor
         }
+        return 0
     }
   
     depositar(Valor){

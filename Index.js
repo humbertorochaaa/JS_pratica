@@ -26,6 +26,8 @@ conta02.agencia = 1701;
 cliente02.nome = "Iasmim";
 cliente02.cpf = 123589798;
 
+conta02.depositar(250);
+
 
 
 
